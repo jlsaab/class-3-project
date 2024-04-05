@@ -1,0 +1,21 @@
+body {
+    margin: 0;
+    padding: 0;
+}
+
+#title {
+    font-family: "Galvji";
+    font-size: 24px;
+    font-weight: bolder;
+    font-display: block;
+    text-align: center;
+    position: relative;
+    margin: 36px;
+}
+
+#map-container {
+    position: absolute;
+    top: 80px;
+    bottom: 20px;
+    width: 100%;
+}
