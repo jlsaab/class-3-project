@@ -34,20 +34,18 @@ for (const input of inputs) {
     }
 };
 
-
-// test marker
-const marker1 = new mapboxgl.Marker().setLngLat([-73.99, 40.7]).addTo(map);
-
 // take a data file and iterate/loop on each row
 homesData.forEach(function (homesRecord) { console.log(homesRecord) });
 // double check that each one is coming in individually
 
 // creating markers based on a CSV file by telling it to loop row after row
 homesData.forEach(function (homesRecord) {
+    // map.getCanvas().style.cursor = 'pointer';
     // creating the popups
     const popup = new mapboxgl.Popup({ offset: 40, anchor: 'bottom' })
         .setText(`We lived in ${homesRecord.town}, ${homesRecord.place} for ${homesRecord.times}.`);
     // creating the markers
-    new mapboxgl.Marker({ scale: 1.5, color: 'color' }).setLngLat([homesRecord.longitude, homesRecord.latitude]).setPopup(popup).addTo(map)
+    new mapboxgl.Marker({ scale: 1.5, color: 'color'}).setLngLat([homesRecord.longitude, homesRecord.latitude]).setPopup(popup).addTo(map);
+    map.getCanvas().style.cursor = 'pointer'
 })
 

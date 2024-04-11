@@ -10,16 +10,14 @@ body {
     display: block;
     width: fit-content;
 }
-
 #title {
-    font-size: 24px;
+    font-size: 48px;
     font-weight: bolder;
     font-display: block;
     text-align: center;
     position: relative;
-    margin: 36px;
+    margin: 16px;
 }
-
 #subtitle {
     font-size: 18px;
     font-weight: normal;
@@ -27,40 +25,64 @@ body {
     font-display: block;
     text-align: center;
     position: relative;
-    margin: 36px;
+    margin: 16px;
 }
-
-#footer {
-    font-size: 14px;
+#cta {
+    font-size: 18px;
+    border-radius: 12px;
     font-weight: normal;
-    color:darkslategrey;
+    background-color:olive;
+    color: whitesmoke;
     font-display: block;
     text-align: left;
-    position: absolute;
+    position: relative;
     margin-top: 14px;
     padding: 10px;
+    left: 10px;
 }
-
+#footer {
+    position: fixed;
+    left: 10px;
+    bottom: 60px;
+    background-color: black;
+    margin-top: 14px;
+    padding: 10px;
+    font-size: 14px;
+    font-weight: normal;
+    color:olive;
+    font-display: block;
+    text-align: left;
+    border-radius: 12px;
+}
+.source-code {
+    text-decoration: none;
+    color: chartreuse;
+    cursor: pointer;
+}
+.source-code:hover {
+    text-decoration: underline;
+}
+/* creating main property to house map */
 #map {
     position: absolute;
     top: 140px;
     bottom: 20px;
     width: 100%;
 }
-
 /* adding a tool bar that switches map background */
 #menu {
     position: absolute;
+    border-radius: 12px;
     background: #efefef;
     padding: 10px;
+    left: 10px;
+    margin-top: 16px;
 }
-
 /* popup creation */
 .mapboxgl-popup {
     font-size: 16px;
     color: olive;
 }
-
 .mapboxgl-popup-content {
     padding: 10px;
 }

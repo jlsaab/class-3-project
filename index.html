@@ -12,12 +12,18 @@
 <body>
     <!-- title block -->
     <div id="title">Homes Across the Globe</div>
-    <div id="subtitle">A Tour of a U.S. Military Family's Trajectory</div>
+    <div id="subtitle">A Tour of a U.S. Military Family's Trajectory from 1995 to 2016</div>
     <!-- map -->
     <div id="map"></div>
+    <!-- invitation to engage -->
+    <div class="block" id="cta">
+        <p>
+            Click a pin to learn more about how long we were there and click and drag to spin the Earth!
+        </p>
+    </div>
     <!-- background layer menu -->
     <div id="menu">
-        <input id="satellite-streets-v12" type="radio" name="rtoggle" value="satellite" checked="checked">
+        <input id="satellite-streets-v12" type="radio" name="rtoggle" value="satellite" checked="checked" cursor="pointer">
         <label for="satellite-streets-v12">satellite streets</label>
         <input id="light-v11" type="radio" name="rtoggle" value="light">
         <label for="light-v11">light</label>
@@ -27,24 +33,24 @@
         <label for="streets-v12">streets</label>
         <input id="outdoors-v12" type="radio" name="rtoggle" value="outdoors">
         <label for="outdoors-v12">outdoors</label>
-        <input id="satellite-v9" type="radio" name="rtoggle" value="satellite-no-streets">
-        <label for="satellite-v9">satellite no streets</label>
         <!-- List of Mapbox public styles: https://docs.mapbox.com/api/maps/styles/#mapbox-styles -->
     </div>
+    <!-- search bar lines of necessary code -->
     <script src="https://api.mapbox.com/mapbox-gl-js/plugins/mapbox-gl-geocoder/v5.0.0/mapbox-gl-geocoder.min.js"></script>
     <link rel="stylesheet" href="https://api.mapbox.com/mapbox-gl-js/plugins/mapbox-gl-geocoder/v5.0.0/mapbox-gl-geocoder.css" type="text/css">
-    <br>
-    <br>
     <!-- footer -->
     <div class="block" id="footer">
         <p>
             This is an ode to my parents, family, and all the wonderful people we met growing up. <br>
             This is not an endorsement of the U.S. Military or its actions and policies.
         </p>
+        <p>
+            <a class="source-code" href="https://github.com/jlsaab/class-3-project">Source Code</a>
+        </p>
     </div>
 </body>
 
-<!-- Javascript code that must be below map and other content -->
+<!-- js code that must be below map and other content -->
 <body>
     <script src="https://api.mapbox.com/mapbox-gl-js/v3.2.0/mapbox-gl.js"></script>
     <script src="js/homes-data.js"></script>
