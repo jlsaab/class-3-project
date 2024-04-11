@@ -4,6 +4,7 @@ body {
     top: 80px;
     bottom: 20px;
     font-family: "Galvji";
+    background-color: lavenderblush;
 }
 .block {
     background: white;
@@ -28,11 +29,12 @@ body {
     margin: 16px;
 }
 #cta {
-    font-size: 18px;
+    font-size: 14px;
     border-radius: 12px;
     font-weight: normal;
-    background-color:olive;
-    color: whitesmoke;
+    background-color: black;
+    background-image: linear-gradient(olive, rgba(85, 107, 47, 0.5));
+    color: lavenderblush;
     font-display: block;
     text-align: left;
     position: relative;
@@ -43,17 +45,18 @@ body {
 #footer {
     position: fixed;
     left: 10px;
-    bottom: 60px;
-    background-color: black;
+    bottom: 3%;
+    background-color: rgba(0, 0, 0, 0.5);
     margin-top: 14px;
     padding: 10px;
     font-size: 14px;
     font-weight: normal;
-    color:olive;
+    color:lavenderblush;
     font-display: block;
     text-align: left;
     border-radius: 12px;
 }
+/* adding source code link (adapted from professor) */
 .source-code {
     text-decoration: none;
     color: chartreuse;
@@ -65,15 +68,17 @@ body {
 /* creating main property to house map */
 #map {
     position: absolute;
-    top: 140px;
-    bottom: 20px;
+    top: 150px;
+    bottom: 0;
     width: 100%;
+    background-color: black;
 }
 /* adding a tool bar that switches map background */
 #menu {
     position: absolute;
     border-radius: 12px;
-    background: #efefef;
+    background: rgba(0, 0, 0, 0.5);
+    color: lavenderblush;
     padding: 10px;
     left: 10px;
     margin-top: 16px;
