@@ -1,10 +1,17 @@
 body {
     margin: 0;
     padding: 0;
+    top: 80px;
+    bottom: 20px;
+    font-family: "Galvji";
+}
+.block {
+    background: white;
+    display: block;
+    width: fit-content;
 }
 
 #title {
-    font-family: "Galvji";
     font-size: 24px;
     font-weight: bolder;
     font-display: block;
@@ -13,9 +20,37 @@ body {
     margin: 36px;
 }
 
-#map-container {
+#subtitle {
+    font-size: 18px;
+    font-weight: normal;
+    color: olive;
+    font-display: block;
+    text-align: center;
+    position: relative;
+    margin: 36px;
+}
+
+#footer {
+    font-size: 14px;
+    font-weight: normal;
+    color:darkslategrey;
+    font-display: block;
+    text-align: left;
     position: absolute;
-    top: 80px;
+    margin-top: 14px;
+    padding: 10px;
+}
+
+#map {
+    position: absolute;
+    top: 140px;
     bottom: 20px;
     width: 100%;
+}
+
+/* adding a tool bar that switches map background */
+#menu {
+    position: absolute;
+    background: #efefef;
+    padding: 10px;
 }
