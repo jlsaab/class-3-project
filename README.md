@@ -1,6 +1,4 @@
-# class-3-project
-
-# Map of Places I Lived Growing Up
+# Map of Homes I Had
 
 This map is for class 3 in Advanced GIS: Interactive Web Mapping and Spatial Data Visualization.
 
