@@ -40,7 +40,6 @@ homesData.forEach(function (homesRecord) { console.log(homesRecord) });
 
 // creating markers based on a CSV file by telling it to loop row after row
 homesData.forEach(function (homesRecord) {
-    // map.getCanvas().style.cursor = 'pointer';
     // creating the popups
     const popup = new mapboxgl.Popup({ offset: 40, anchor: 'bottom' })
         .setText(`We lived in ${homesRecord.town}, ${homesRecord.place} for ${homesRecord.times}.`);
